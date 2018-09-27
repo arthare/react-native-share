@@ -121,7 +121,13 @@ public class ShareFile {
         if(extension == null)
         {
             System.out.println("mime type = " + inputMimeType);
-            return null;
+            switch(inputMimeType)
+            {
+                case "application/vnd.garmin.tcx+xml":
+                    return "tcx";
+                default:
+                    return null;
+            }
         }
         else
         {
