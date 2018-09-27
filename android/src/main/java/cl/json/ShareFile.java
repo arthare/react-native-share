@@ -114,10 +114,24 @@ public class ShareFile {
         }
         return result;
     }
+
+    private String getMimeType(String inputMimeType) {
+        String extension = mime.getExtensionFromMimeType(getType());
+        if(extension == null)
+        {
+            System.out.println("mime type = " + inputMimeType);
+            return null;
+        }
+        else
+        {
+            return extension;
+        }
+    }
+
     public Uri getURI() {
 
         final MimeTypeMap mime = MimeTypeMap.getSingleton();
-        this.extension = mime.getExtensionFromMimeType(getType());
+        this.extension = getMimeType(String inputMimeType)
         final String authority = ((ShareApplication) reactContext.getApplicationContext()).getFileProviderAuthority();
 
         if(this.isBase64File()) {
