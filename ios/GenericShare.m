@@ -9,7 +9,6 @@
 #import "GenericShare.h"
 
 @implementation GenericShare
-    RCT_EXPORT_MODULE();
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
     successCallback:(RCTResponseSenderBlock)successCallback
@@ -59,7 +58,7 @@
         NSString *escapedString = [options[@"message"] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
 
         if ([options[@"social"] isEqualToString:@"twitter"]) {
-          NSString *URL = [NSString stringWithFormat:@"https://twitter.com/intent/tweet?text=%@&url=%@", escapedString, options[@"url"]];
+          NSString *URL = [NSString stringWithFormat:@"https://twitter.com/intent/tweet?message=%@&url=%@", escapedString, options[@"url"]];
           [self openScheme:URL];
         }
 

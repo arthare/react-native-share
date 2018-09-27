@@ -9,7 +9,6 @@
 #import "GooglePlusShare.h"
 
 @implementation GooglePlusShare
-    RCT_EXPORT_MODULE();
 - (void)shareSingle:(NSDictionary *)options
     failureCallback:(RCTResponseErrorBlock)failureCallback
     successCallback:(RCTResponseSenderBlock)successCallback {

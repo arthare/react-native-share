@@ -1,65 +1,92 @@
 {
-  "name": "react-native-share",
-  "description": "Social share, sending simple data to other apps.",
-  "version": "1.1.2",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/react-native-community/react-native-share.git"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^6.1.0",
-    "@commitlint/config-conventional": "^6.1.0",
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.17.0",
-    "eslint-plugin-flowtype": "^2.46.2",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-react": "^7.6.1",
-    "eslint-plugin-react-native": "^3.2.0",
-    "flow-bin": "^0.77.0",
-    "generate-changelog": "1.7.0",
-    "husky": "^0.14.3",
-    "idx": "^2.4.0",
-    "lint-staged": "^7.0.0",
-    "minimist": "1.2.0",
-    "pre-commit": "^1.2.2",
-    "prettier": "^1.12.0",
-    "react": "16.3.1",
-    "react-native": "0.55.2",
-    "simple-git": "1.89.0"
-  },
-  "keywords": [
-    "react-native",
-    "android",
-    "ios",
-    "windows",
-    "bridge",
-    "react",
-    "share"
+  "_args": [
+    [
+      {
+        "raw": "react-native-share@^1.0.27",
+        "scope": null,
+        "escapedName": "react-native-share",
+        "name": "react-native-share",
+        "rawSpec": "^1.0.27",
+        "spec": ">=1.0.27 <2.0.0",
+        "type": "range"
+      },
+      "h:\\gitroot\\scpReact"
+    ]
   ],
-  "nativePackage": true,
+  "_from": "react-native-share@>=1.0.27 <2.0.0",
+  "_id": "react-native-share@1.0.27",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-share",
+  "_nodeVersion": "6.12.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/react-native-share_1.0.27_1521833005733_0.4055733155903014"
+  },
+  "_npmUser": {
+    "name": "estebanfuentealba",
+    "email": "efuentealba@json.cl"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-share@^1.0.27",
+    "scope": null,
+    "escapedName": "react-native-share",
+    "name": "react-native-share",
+    "rawSpec": "^1.0.27",
+    "spec": ">=1.0.27 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-share/-/react-native-share-1.0.27.tgz",
+  "_shasum": "1861afe0d1256bde95d19520ca5d5c3cd348ffad",
+  "_shrinkwrap": null,
+  "_spec": "react-native-share@^1.0.27",
+  "_where": "h:\\gitroot\\scpReact",
   "author": {
     "name": "Esteban Fuentealba",
     "email": "efuentealba@json.cl"
   },
-  "homepage": "https://github.com/react-native-community/react-native-share",
-  "license": "MIT",
-  "lint-staged": {
-    "*.js": [
-      "yarn prettier",
-      "eslint --fix",
-      "git add"
-    ]
+  "bugs": {
+    "url": "https://github.com/EstebanFuentealba/react-native-share/issues"
   },
-  "pre-commit": "lint:staged",
-  "readmeFilename": "README.md",
-  "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "lint": "eslint src --max-warnings=0",
-    "lint:staged": "lint-staged",
-    "prettier": "prettier --write --single-quote true --trailing-comma all --print-width 100",
-    "release:major": "node ./changelog --major && npm version major && git push origin && git push origin --follow-tags",
-    "release:minor": "node ./changelog --minor && npm version minor && git push origin && git push origin --follow-tags",
-    "release:patch": "node ./changelog --patch && npm version patch && git push origin && git push origin --follow-tags",
-    "release:version": "node ./changelog --version $VERSION && git push origin && git push origin --follow-tags"
-  }
+  "dependencies": {},
+  "description": "Social Share, Sending Simple Data to Other Apps",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-fSf+kJHy5OHfSl66hRZNf+584QH4Gp6O0BCKgQgMJwEnTutk6oBSSUHOa5zQ3W8GqbnhvMJSext7+mJXiEHDsA==",
+    "shasum": "1861afe0d1256bde95d19520ca5d5c3cd348ffad",
+    "tarball": "https://registry.npmjs.org/react-native-share/-/react-native-share-1.0.27.tgz",
+    "fileCount": 52,
+    "unpackedSize": 933621
+  },
+  "gitHead": "3f01bb15f45f684ece157cb00b5c1c10383975ba",
+  "homepage": "https://github.com/EstebanFuentealba/react-native-share#readme",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android",
+    "ios",
+    "windows"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "estebanfuentealba",
+      "email": "efuentealba@json.cl"
+    }
+  ],
+  "name": "react-native-share",
+  "nativePackage": true,
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanFuentealba/react-native-share.git"
+  },
+  "version": "1.0.28"
 }

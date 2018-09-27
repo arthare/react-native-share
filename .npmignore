@@ -1,9 +1,0 @@
-.babelrc
-.flowconfig
-.eslintrc
-.gitignore
-circle.yml
-jsconfig.json
-commitlint.config.js
-assets/*
-example/*
