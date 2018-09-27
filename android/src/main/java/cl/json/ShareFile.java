@@ -131,7 +131,7 @@ public class ShareFile {
     public Uri getURI() {
 
         final MimeTypeMap mime = MimeTypeMap.getSingleton();
-        this.extension = getMimeType(String inputMimeType);
+        this.extension = getMimeType(getType());
         final String authority = ((ShareApplication) reactContext.getApplicationContext()).getFileProviderAuthority();
 
         if(this.isBase64File()) {
